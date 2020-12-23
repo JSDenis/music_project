@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Record Project</title>
+    <title>Music Project</title>
     <link rel="stylesheet" href="./css/materialize.min.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="./scss/style.css">
@@ -124,30 +124,58 @@
         <div class="main__wrapper">
             <div class="row">
                 <div class="col s12 items__slider">
-                    <div class="all__items">
-                        <div class="item__photo prev__item">
-                            <img src="./images/5eb63513bf879image.jpg" alt="photo1">
+                    <!-- <div class="active__item"> -->
+                        <div class="all__items" style=" width: 12000px; transform: translate3d(-430px, 0px, 0px);">
+                            <div class="item__photo prev__item" data-item-photo="-1">
+                                <img src="./images/5eb63513bf879image.jpg" alt="photo1">
+                            </div>
+                            <div class="item__photo" data-item-photo="0">
+                                <img src="./images/WhatsGoodnewsimage.jpg" alt="photo3">
+                            </div>
+                            <div class="item__photo next__item"  data-item-photo="1">
+                                <img src="./images/best-dance-clubs-lisbon-portugal.jpg" alt="photo2">
+                            </div>
+                            <div class="item__photo"  data-item-photo="2">
+                                <img src="./images/underground2.jpg" alt="photo4">
+                            </div>
+                            <div class="item__photo"  data-item-photo="3">
+                                <img src="./images/How-to-Make-a-Good-Spotify-Playlist-e1559562327608.jpeg" alt="photo5">
+                            </div>
+                            <!-- loop slides-->
+                            <div class="item__photo prev__item" data-item-photo="4">
+                                <img src="./images/5eb63513bf879image.jpg" alt="photo1">
+                            </div>
+                            <div class="item__photo active__item" data-item-photo="5">
+                                <img src="./images/WhatsGoodnewsimage.jpg" alt="photo3">
+                            </div>
+                            <div class="item__photo next__item"  data-item-photo="6">
+                                <img src="./images/best-dance-clubs-lisbon-portugal.jpg" alt="photo2">
+                            </div>
+                            <div class="item__photo"  data-item-photo="7">
+                                <img src="./images/underground2.jpg" alt="photo4">
+                            </div>
+                            <div class="item__photo"  data-item-photo="8">
+                                <img src="./images/How-to-Make-a-Good-Spotify-Playlist-e1559562327608.jpeg" alt="photo5">
+                            </div>
                         </div>
-                        <div class="item__photo">
-                            <img src="./images/WhatsGoodnewsimage.jpg" alt="photo3">
-                        </div>
-                        <div class="item__photo next__item">
-                            <img src="./images/best-dance-clubs-lisbon-portugal.jpg" alt="photo2">
-                        </div>
-                        <div class="item__photo">
-                            <img src="./images/underground2.jpg" alt="photo4">
-                        </div>
-                        <div class="item__photo">
-                            <img src="./images/How-to-Make-a-Good-Spotify-Playlist-e1559562327608.jpeg" alt="photo5">
-                        </div>
-                    </div>
-
+                    <!-- </div> -->
                     This div is 12-columns wide on all screen sizes
                     <ul class="items__button">
-                        <a class="btn-large disabled">Button</a>
-                        <a class="btn disabled">Button</a>
-                        <a class="btn-flat disabled">Button</a>
-                        <a class="btn-floating disabled"><i class="material-icons">add</i></a>
+                        <li class="dot__item">
+                            <button>1</button>
+                        </li>
+                        <li class="dot__item dot__active">
+                            <button>1</button>
+                        </li>
+                        <li class="dot__item">
+                            <button>1</button>
+                        </li>
+                        <li class="dot__item">
+                            <button>1</button>
+                        </li>
+                        <li class="dot__item">
+                            <button>1</button>
+                        </li>
                     </ul>
 
 
@@ -186,6 +214,7 @@
 
     <script src="./scripts/loader.js"></script>
     <script src="./scripts/script.js"></script>
+    <script src="./scripts/slider.js"></script>
 </body>
 
 </html>
