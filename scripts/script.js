@@ -8,3 +8,4 @@ menuToggle.addEventListener("click", function () {
         e.classList.toggle("active");
     });
 })
+

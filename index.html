@@ -6,10 +6,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Record Project</title>
     <link rel="stylesheet" href="./css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="./scss/style.css">
 </head>
 
 <body>
+
+    <div class="preloader-wrapper active main__preloader" id="main-preloader">
+        <div class="spinner-layer spinner-red-only">
+            <div class="circle-clipper left">
+                <div class="circle"></div>
+            </div>
+            <div class="gap-patch">
+                <div class="circle"></div>
+            </div>
+            <div class="circle-clipper right">
+                <div class="circle"></div>
+            </div>
+        </div>
+    </div>
 
     <div id="root">
         <nav class="top__nav">
@@ -20,16 +35,129 @@
                     <div class="two"></div>
                     <div class="three"></div>
                 </div>
+                <div class="menu__content">
+                    <div class="sign__in">Войти</div>
+                    <div class="menu__content__items">
+                        <div>
+                            <a href="#">
+                                <span class="item__icon material-icons">home</span>
+                                <span class="item__text">Home page</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="menu__content__items">
+                        <div>
+                            <a href="#">
+                                <span class="item__icon material-icons">radio</span>
+                                <span class="item__text">Radio channels</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="menu__content__items">
+                        <div>
+                            <a href="#">
+                                <span class="item__icon material-icons">library_music</span>
+                                <span class="item__text">Podcasts</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="menu__content__items">
+                        <div>
+                            <a href="#">
+                                <span class="item__icon material-icons">event_note</span>
+                                <span class="item__text">Events</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="menu__content__items more__items">
+                        <div>
+                            <span class="item__list">
+                                <span class="item__text">More</span>
+                                <span class="item__icon material-icons">chevron_right</span>
+                            </span>
+                            <div class="sub__menu">
+                                <div class="sub__items">
+                                    <div>
+                                        <a href="#">
+                                            <span class="item__text">News</span>
+                                        </a>
+                                    </div>
+                                    <div>
+                                        <a href="#">
+                                            <span class="item__text">Vacancies</span>
+                                        </a>
+                                    </div>
+                                    <div>
+                                        <a href="#">
+                                            <span class="item__text">Contacts</span>
+                                        </a>
+                                    </div>
+                                    <div>
+                                        <a href="#">
+                                            <span class="item__text">About Us</span>
+                                        </a>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="social__block">
+                        <div class="items">
+                            <a href="#" class="material-icons">email</a>
+                            <a href="#" class="material-icons">call</a>
+                            <a href="#" class="material-icons">ondemand_video</a>
+
+                        </div>
+                    </div>
+                </div>
             </div>
             <div class="logo">
                 Your Logo
             </div>
-            
+            <div class="sign__in__desktop">
+                <p>Войти</p>
+            </div>
+
         </nav>
 
         <div class="main__wrapper">
+            <div class="row">
+                <div class="col s12 items__slider">
+                    <div class="all__items">
+                        <div class="item__photo prev__item">
+                            <img src="./images/5eb63513bf879image.jpg" alt="photo1">
+                        </div>
+                        <div class="item__photo">
+                            <img src="./images/WhatsGoodnewsimage.jpg" alt="photo3">
+                        </div>
+                        <div class="item__photo next__item">
+                            <img src="./images/best-dance-clubs-lisbon-portugal.jpg" alt="photo2">
+                        </div>
+                        <div class="item__photo">
+                            <img src="./images/underground2.jpg" alt="photo4">
+                        </div>
+                        <div class="item__photo">
+                            <img src="./images/How-to-Make-a-Good-Spotify-Playlist-e1559562327608.jpeg" alt="photo5">
+                        </div>
+                    </div>
 
+                    This div is 12-columns wide on all screen sizes
+                    <ul class="items__button">
+                        <a class="btn-large disabled">Button</a>
+                        <a class="btn disabled">Button</a>
+                        <a class="btn-flat disabled">Button</a>
+                        <a class="btn-floating disabled"><i class="material-icons">add</i></a>
+                    </ul>
+
+
+                </div>
+                <div class="col s6">6-columns (one-half)</div>
+                <div class="col s6">6-columns (one-half)</div>
+            </div>
         </div>
+
+
 
         <div class="collection">
             <a href="#!" class="collection-item"><span class="badge">1</span>Alan</a>
@@ -52,8 +180,11 @@
             <div class="col s1">11</div>
             <div class="col s1">12</div>
         </div>
+
+
     </div>
 
+    <script src="./scripts/loader.js"></script>
     <script src="./scripts/script.js"></script>
 </body>
 
