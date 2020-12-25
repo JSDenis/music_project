@@ -1,0 +1,10 @@
+.slider__list.grab {
+  cursor: -webkit-grab;
+  cursor: grab;
+}
+
+.slider__list.grabbing {
+  cursor: -webkit-grabbing;
+  cursor: grabbing;
+}
+/*# sourceMappingURL=slider.css.map */

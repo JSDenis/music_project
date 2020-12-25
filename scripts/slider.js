@@ -1,4 +1,15 @@
 let dots = document.querySelector('.items__button');
+const sliderList = document.querySelector('.slider__list');
+const sliderTrack = document.querySelector('.all__items');
+const slider = document.querySelector('.items__slider');
+let allowSwipe = true;
+let transition = true;
+let nextTrf = 0;
+let prevTrf = 0;
+let slideIndex = 0;
+let posInit = 0;
+let posY1 = 0;
+let posX1 = 0;
 
 dots.addEventListener('click', function(e){
     if(e.target.tagName === 'UL'){
@@ -80,3 +91,47 @@ function centerActiveSlide(){
 window.addEventListener('resize', centerActiveSlide);
 
 centerActiveSlide();
+
+
+// touch
+
+sliderList.classList.add('grab');
+
+function swipeStart(){
+    let evt = getEvent();
+
+    //console.log(evt);
+
+    if(allowSwipe){
+        transition = true;
+
+        slideIndex = putActiveDot();
+
+        nextTrf = (slideIndex + 1) * -930;
+        prevTrf = (slideIndex - 1) * -930;
+
+        posInit = posX1 = evt.clientX;
+        posY1 = evt.clientY;
+
+        sliderTrack.style.transition = '';
+
+        /* console.log('slideIndex:', slideIndex, 'nextTrf:', nextTrf, 'prevTrf:', prevTrf, 'posInit:', posInit, 
+        'posY1:', posY1 ); */
+
+       /*  document.addEventListener('touchmove', swipeAction);
+        document.addEventListener('mousemove', swipeAction);
+        document.addEventListener('touchend', swipeEnd);
+        document.addEventListener('mouseup', swipeEnd); */
+
+    }
+
+    sliderList.classList.remove('grab');
+    sliderList.classList.add('grabbing');
+}
+
+getEvent = function() {
+    return (event.type.search('touch') !== -1) ? event.touches[0] : event;
+},
+
+slider.addEventListener('mousedown', swipeStart);
+
