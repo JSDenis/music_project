@@ -343,6 +343,10 @@ body {
   display: -ms-flexbox;
   display: flex;
   opacity: 1;
+  -webkit-transition: -webkit-transform 500ms ease-in-out 0s;
+  transition: -webkit-transform 500ms ease-in-out 0s;
+  transition: transform 500ms ease-in-out 0s;
+  transition: transform 500ms ease-in-out 0s, -webkit-transform 500ms ease-in-out 0s;
   /* transform: translate3d(-5330px, 0px, 0px); */
   /*  width: 12090px; */
 }
